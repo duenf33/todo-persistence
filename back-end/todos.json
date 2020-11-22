@@ -1,16 +1,6 @@
 {
   "todos": [
     {
-      "text": "Christopher",
-      "priority": 2,
-      "isComplete": false
-    },
-    {
-      "text": "Fernando",
-      "priority": 2,
-      "isComplete": false
-    },
-    {
       "text": "make todo app better",
       "isComplete": true,
       "priority": 1
