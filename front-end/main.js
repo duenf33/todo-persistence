@@ -34,7 +34,7 @@ fs.readFile('./../back-end/todos.json', 'utf8', (err, data) => {
   displayTodos();
 })
 
-const saveTodos = (todo) => {
+const saveTodos = () => {
   const obj = {todos: todos}
   const data = JSON.stringify(obj, null, 2);
   fs.writeFile('./../back-end/todos.json', data, 'utf8', (err) => {
@@ -69,6 +69,7 @@ const add = answer => {
 
 const remove = num => {
   todos.splice(num - 1, 1);
+  saveTodos();
   displayTodos();
   displayMenu();
 }
